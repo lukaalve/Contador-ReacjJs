@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scalWe=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Contador - VanillaJS</title>
+
+</head>
+
+<body>
+    <div class="card">
+        <h1>Contador</h1>
+        <span>Total: </span>
+        <span id="resultado"></span>
+        <br>
+        <button type="button" onclick="maisUm()"> +1 </button>
+        <button type="button" onclick="menosUm()"> -1 </button>
+
+    </div>
+
+    <script>
+        var total = 0
+        function maisUm() {
+            const elemento = document.getElementById('resultado')
+            total += 1
+            elemento.innerText = total
+        }
+
+        function menosUm() {
+            const elemento = document.getElementById('resultado')
+            total -= 1
+            elemento.innerText = total
+        }
+    </script>
+</body>
+
+</html>
